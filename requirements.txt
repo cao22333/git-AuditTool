@@ -1,0 +1,6 @@
+Pillow
+tkinterdnd2
+pandas
+chardet
+xlwings
+openpyxl
