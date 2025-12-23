@@ -1,0 +1,14 @@
+[project]
+name = "git-audittool"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "chardet>=5.2.0",
+    "openpyxl>=3.1.5",
+    "pandas>=2.3.3",
+    "pillow>=12.0.0",
+    "tkinterdnd2>=0.4.3",
+    "xlwings>=0.33.19",
+]

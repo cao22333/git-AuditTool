@@ -280,4 +280,4 @@ class AuditToolApp:
         """
         self._clear_content_area()
         self._set_page_title("关于审计工具箱")
-        ttk.Label(self.page_container, text="审计工具箱 v1.0\n开发者：Kilo Code\n\n致力于提升审计工作效率。", font=('Microsoft YaHei UI', 12), background=self.colors["background"], foreground=self.colors["text"]).pack(pady=50)
+        ttk.Label(self.page_container, text="审计工具箱 v1.0\n开发者：Allen\n\n致力于提升审计工作效率。", font=('Microsoft YaHei UI', 12), background=self.colors["background"], foreground=self.colors["text"]).pack(pady=50)
