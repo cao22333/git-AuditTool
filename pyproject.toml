@@ -1,7 +1,7 @@
 [project]
 name = "git-audittool"
 version = "0.1.0"
-description = "Add your description here"
+description = "本项目目前仍处于开发阶段，后续将加入更多功能"
 readme = "README.md"
 requires-python = ">=3.14"
 dependencies = [
