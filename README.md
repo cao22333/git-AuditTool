@@ -1,7 +1,7 @@
 # 审计工具箱 (AuditTool)
 
 ## 简介
-审计工具箱是一个旨在提高财务审计效率的桌面应用程序。它集成了多个实用工具，帮助审计师处理超大CSV文件、管理文件夹状态以及进行科目勾稽等任务。本工具采用Python的Tkinter库开发，界面简洁直观，易于操作。
+审计工具箱是一个旨在提高财务审计效率的桌面应用程序，目前正在开发。它集成了多个实用工具，帮助审计师处理超大CSV文件、管理文件夹状态以及进行科目勾稽等任务。本工具的UI界面采用Python的Tkinter库开发，界面简洁直观，易于操作。
 
 ## 功能特性
 本工具箱包含以下主要功能：
@@ -24,44 +24,16 @@
 
 ## 安装与运行
 
-### 1. 环境准备
-确保您的系统安装了 Python 3.x 版本。
-推荐使用虚拟环境进行项目管理：
+本项目采用了uv管理工具，不适用pip等管理工具，不需要提前创建虚拟环境，但需要提前安装uv：
 
-```bash
-python -m venv .venv
-# 激活虚拟环境
-# Windows:
-.venv\Scripts\activate
-# macOS/Linux:
-source .venv/bin/activate
-```
-
-### 2. 安装依赖
-在激活的虚拟环境中，安装所有必需的Python库：
-
-```bash
-pip install pandas openpyxl chardet xlwings Pillow tkinterdnd2
-```
-**注意**: `xlwings` 库需要您的系统安装了 Microsoft Excel。`tkinterdnd2` 是用于拖放功能，如果安装遇到问题，可以尝试手动安装或忽略（拖放功能将不可用）。
-
-### 3. 克隆项目
-```bash
-git clone [项目仓库地址]
-cd AuditTool_ing/git-AuditTool # 假设项目克隆到此目录
-```
-
-### 4. 运行应用程序
-在项目根目录（包含 `main.py` 的目录）下，运行：
-
-```bash
-python main.py
-```
+如果您系统环境已经安装了pip，可以直接在cmd中使用命令：`pip install uv`安装uv；
+或者使用 irm 下载脚本并通过 iex 执行：
+`powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
 
 ## 使用说明
 
 ### 启动应用
-运行 `python main.py` 后，将打开审计工具箱的主界面。界面左侧为功能导航菜单，右侧为内容显示区域。
+在确保系统环境中存在uv后，运行 `uv run main.py` 后，将打开审计工具箱的主界面。界面左侧为功能导航菜单，右侧为内容显示区域。
 
 ### 1. CSV 文件处理
 *   点击左侧菜单的“CSV 文件处理”按钮。
